@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Car</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #17202A; /* Color de fondo azul oscuro */
+            font-family: Arial, sans-serif;
+            color: #fff; /* Color de texto blanco */
+            font-size: 24px; /* Tamaño de fuente general */
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            font-size: 48px; /* Tamaño de la fuente del encabezado */
+        }
+
+        .logo {
+            margin-top: 20px; /* Espacio entre el texto y el logo */
+            text-align: center;
+        }
+
+        .logo img {
+            width: 150px; /* Tamaño del logo */
+            height: auto;
+        }
+
+        /* Estilos para el menú */
+        .menu {
+            text-align: center;
+            margin-top: 20px; /* Espacio entre el logo y el menú */
+            font-size: 36px; /* Tamaño de la fuente del menú */
+        }
+
+        .menu a {
+            color: #fff; /* Color de texto blanco */
+            text-decoration: none;
+            margin: 0 10px; /* Espacio entre los elementos del menú */
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #17202A; /* Color de fondo azul oscuro */
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #34495E; /* Color de fondo azul oscuro más claro */
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Estilos para el contenido */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .service {
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        .service img {
+            width: 400px; /* Aumenta el tamaño de las imágenes */
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .service-description {
+            flex-grow: 1;
+        }
+
+        .service-description h3 {
+            margin-top: 0;
+        }
+
+        .service-description p {
+            color: #ccc; /* Color de texto gris */
+        }
+
+        /* Estilos para la lista de precios */
+        .price-list {
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px; /* Tamaño de la fuente de la tabla */
+            border-collapse: collapse;
+            width: 80%; /* Ajusta el ancho de la tabla */
+            color: #fff; /* Color del texto */
+        }
+
+        .price-list th,
+        .price-list td {
+            padding: 15px 20px; /* Aumenta el espacio alrededor del texto */
+            border: 2px solid #fff; /* Añade bordes a las celdas */
+        }
+
+        .price-list th {
+            background-color: #34495E; /* Color de fondo del encabezado de la tabla */
+        }
+
+        .price-list td {
+            background-color: #2C3E50; /* Color de fondo de las celdas de la tabla */
+        }
+
+        /* Otros estilos aquí */
+    </style>
+</head>
+<body>
+    <div class="header">
+        Rent a Car
+    </div>
+    <div class="logo">
+        <img src="file:///C|/Users/LENOVO/Documents/Adobe dreamweaver/actividad 2/index imagenes/logo.png" width="1238" height="861" alt=""/>
+    </div>
+    <div class="menu">
+        <div class="dropdown">
+            <span>Servicios</span>
+            <div class="dropdown-content">
+                <a href="#mantenimiento">Mantenimiento</a>
+                <a href="#montallantas">Montallantas</a>
+                <a href="#alineacion">Alineación</a>
+                <a href="#balanceo">Balanceo</a>
+            </div>
+        </div>
+        <a href="#inicio">Inicio</a>
+        <a href="#autos">Autos</a>
+        <a href="#contacto">Contacto</a> <!-- Se cambió el enlace -->
+    </div>
+    <div class="container">
+        <h2 style="font-size: 36px; text-align: center;">Lista de Precios</h2>
+        <table class="price-list">
+            <tr>
+                <th>Servicio</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Mantenimiento</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>Montallantas</td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>Alineación</td>
+                <td>$30</td>
+            </tr>
+            <tr>
+                <td>Balanceo</td>
+                <td>$30</td>
+            </tr>
+        </table>
+
+        <div class="service">
+            <img src="19705.jpg" alt=""/>
+            <div class="service-description">
+              <h3>Mantenimiento</h3>
+                <p>Se refiere al conjunto de acciones preventivas y correctivas que se realizan en un vehículo para asegurar su buen funcionamiento y prolongar su vida útil. Esto incluye cambios de aceite, revisión de frenos, inspección de neumáticos, entre otros.</p>
+            </div>
+        </div>
+
+        <div class="service"> <img src="2148327581.jpg" alt=""/>
+            <div class="service-description">
+              <h3>Montallantas</h3>
+                <p>Es el proceso de montar o desmontar neumáticos en las llantas de un vehículo. Se realiza utilizando herramientas especiales para asegurar que los neumáticos queden correctamente instalados en las llantas.</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <img src="2147881389.jpg" alt=""/>
+            <div class="service-description">
+              <h3>Alineación</h3>
+                <p>La alineación de las ruedas es el proceso de ajustar los ángulos de las ruedas de un vehículo para que estén paralelas entre sí y perpendiculares al suelo. Esto ayuda a asegurar un desgaste uniforme de los neumáticos y un manejo óptimo del vehículo.</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <img src="12709.jpg" alt=""/>
+            <div class="service-description">
+              <h3>Balanceo</h3>
+                <p>El balanceo de las ruedas se refiere a equilibrar el peso de cada rueda y neumático para evitar vibraciones y desgaste irregular. Se logra colocando contrapesos en las llantas para compensar cualquier desequilibrio.</p>
+            </div>
+        </div>
+    </div>
+    <img src="file:///C|/Users/LENOVO/Documents/Adobe dreamweaver/actividad 3/imagenes/fondo.jpg" alt="Fondo" style="width: 100%; height: auto; position: fixed; top: 0; left: 0; z-index: -1;">
+</body>
+</html>
